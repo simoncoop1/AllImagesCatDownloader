@@ -28,7 +28,7 @@ The `limit` variable is defaulted to 20 images downloaded, and should be changed
 
 Now run the script.
 ```
-python3 py.py
+python py.py
 ```
 
 ## Feedback 
