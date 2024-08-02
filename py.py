@@ -146,8 +146,10 @@ def download(alist,path, startCat):
         p = pathlib.Path(os.path.join(path,startCat))
         if not p.exists():
             p.mkdir()
-        with urllib.request.urlopen(contentURL) as response:
-             with open(os.path.join(str(p),nm), 'bw+') as f:
+        headers = {'User-Agent': user_agent}
+        req = urllib.request.Request(contentURL, None, headers)
+        with urllib.request.urlopen(req) as response:
+            with open(os.path.join(str(p),nm), 'bw+') as f:
                 f.write(response.read())
         #the meta data
         nmm='.'.join(nm.split('.')[:-1])+'.json'
