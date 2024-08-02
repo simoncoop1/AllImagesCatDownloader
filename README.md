@@ -11,7 +11,7 @@ install the SPARQLWrapper library
 pip install SPARQLWrapper
 ```
 
-## Running the script
+## Running
 The begining of the script contains a `cookie` variable which should be set from a http request header, for a brower which is logged into https://commons-query.wikimedia.org/sparql , it will look something like
 ```
 GeoIP=GB:ENG:location:32.31:-3.53:v3; wcqsSession=eyJ0eXdddiJKV1QiLCdddGciOiJIUzI1NiJ9.eyJleHAiOjEdddI2MzQzMzUsInVzZddddYW1lIoiU2ltb25jMTExIn0.DMN78XNNdddaOX3M_GQU2vxp5f_QddEE-rdaaBQa9DA; wcqsOauth=1c9f37de63599596a7a83a7e3916117.33ec0dd78230bb0b12311636c6323222de950
