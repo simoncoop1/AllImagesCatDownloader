@@ -135,6 +135,8 @@ def go():
     for apcat in pscats:
         r = SparqlCommonsCat(endpoint_url,query, cookie, apcat['title'].replace('_',' '))
         somer+=r['results']['bindings']
+    #remove duplicate
+    somer=list({x['file']['value'] : x for x in somer}.values())
     return somer
 
 #variable is pathlib.path object for the species
